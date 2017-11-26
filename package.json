@@ -1,0 +1,15 @@
+{
+  "name": "hyper-native-window-decoration",
+  "version": "0.0.1",
+  "description": "Native window decorations in HyperTerm",
+  "repository": "bgw/hyper-native-window-decoration",
+  "license": "MIT",
+  "author": "bgw",
+  "keywords": [
+    "hyper",
+    "hyper.app",
+    "hyperterm",
+    "terminal"
+  ],
+  "main": "index.js"
+}

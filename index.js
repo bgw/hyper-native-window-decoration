@@ -39,13 +39,11 @@ exports.decorateConfig = config => {
 }
 
 function setTitle(title) {
-  console.log(title);
   const win = require('electron').remote.getCurrentWindow();
   win.setTitle(title || DEFAULT_TITLE);
 }
 
 exports.reduceSessions = (state, action) => {
-  console.log(action);
   switch (action.type) {
     case SESSION_SET_XTERM_TITLE:
       if (action.uid === state.activeUid) {

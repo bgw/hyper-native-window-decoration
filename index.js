@@ -5,9 +5,32 @@ const SESSION_ADD = 'SESSION_ADD';
 
 exports.decorateBrowserOptions = defaults => Object.assign({}, defaults, {
   frame: true,
-  autoHideMenuBar: true,
   darkTheme: true,
 });
+
+exports.onWindow = async (browserWindow) => {
+  let config = await browserWindow.webContents.executeJavaScript(
+    'window.config.getConfig().nativeWindowDecoration'
+  ) || {};
+
+  switch (config.menuBar) {
+    case 'show':
+      browserWindow.setAutoHideMenuBar(false);
+      browserWindow.setMenuBarVisibility(true);
+      break;
+    case 'disable':
+      browserWindow.setAutoHideMenuBar(false);
+      browserWindow.setMenuBarVisibility(false);
+      break;
+    case 'hide':
+    case undefined:
+      browserWindow.setAutoHideMenuBar(true);
+      browserWindow.setMenuBarVisibility(false);
+      break;
+    default:
+      console.error('unsupported menuBar option: ' + config.menuBar);
+  }
+}
 
 exports.decorateHeader = (Header, env) => {
   // passing isMac prevents Header from drawing the header bar

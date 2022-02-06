@@ -11,5 +11,8 @@
     "hyperterm",
     "terminal"
   ],
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "@electron/remote": "^2.0.4"
+  }
 }

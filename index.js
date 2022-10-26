@@ -62,7 +62,13 @@ exports.decorateConfig = config => {
 }
 
 function setTitle(title) {
-  const win = require('electron').remote.getCurrentWindow();
+  let win = null
+  if (require('electron').remote) {
+    win = require('electron').remote.getCurrentWindow();
+  } else {
+    win = require('@electron/remote').getCurrentWindow();
+  }
+  
   win.setTitle(title || DEFAULT_TITLE);
 }
 

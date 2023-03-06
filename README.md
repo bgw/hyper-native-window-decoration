@@ -1,6 +1,7 @@
 # hyper-native-window-decoration
+> ✅ this repo fix error of 'getCurrentWindow'
 
-![](screenshot.png)
+![](src/assets/screenshot.png)
 
 Native window decorations in HyperTerm.
 
@@ -17,16 +18,20 @@ blend in.
 
 Here's that same screenshot, without this plugin:
 
-![](screenshot-without.png)
+![](/src/assets/screenshot-without.png)
 
 ## Install
+Clone this repo in <code>~/.hyper_plugins/local</code>
+```
+git clone https://github.com/gabrielmelogm/hyper-native-window-decoration.git ~/.hyper_plugins/local
+```
+
 
 Edit your `~/.hyper.js`:
 
 ```
-plugins: [
-  'hyper-native-window-decoration',
-],
+plugins: [...],
+localPlugins: ["hyper-native-window-decoration"]
 ```
 
 ## Configuration

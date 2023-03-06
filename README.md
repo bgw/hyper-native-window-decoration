@@ -21,13 +21,17 @@ Here's that same screenshot, without this plugin:
 ![](/src/assets/screenshot-without.png)
 
 ## Install
+Clone this repo in <code>~/.hyper_plugins/local</code>
+```
+git clone https://github.com/gabrielmelogm/hyper-native-window-decoration.git ~/.hyper_plugins/local
+```
+
 
 Edit your `~/.hyper.js`:
 
 ```
-plugins: [
-  '@gabrielmelogm/hyper-native-window-decoration',
-],
+plugins: [...],
+localPlugins: ["hyper-native-window-decoration"]
 ```
 
 ## Configuration

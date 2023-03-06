@@ -1,6 +1,7 @@
 # hyper-native-window-decoration
+> ✅ this repo fix error of 'getCurrentWindow'
 
-![](screenshot.png)
+![](src/assets/screenshot.png)
 
 Native window decorations in HyperTerm.
 
@@ -17,7 +18,7 @@ blend in.
 
 Here's that same screenshot, without this plugin:
 
-![](screenshot-without.png)
+![](/src/assets/screenshot-without.png)
 
 ## Install
 
@@ -25,7 +26,7 @@ Edit your `~/.hyper.js`:
 
 ```
 plugins: [
-  'hyper-native-window-decoration',
+  '@gabrielmelogm/hyper-native-window-decoration',
 ],
 ```
 

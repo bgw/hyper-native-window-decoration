@@ -1,15 +1,18 @@
 {
-  "name": "hyper-native-window-decoration",
+  "name": "@gabrielmelogm/hyper-native-window-decoration",
   "version": "0.0.4",
   "description": "Native window decorations in HyperTerm",
-  "repository": "bgw/hyper-native-window-decoration",
+  "repository": "https://github.com/gabrielmelogm/hyper-native-window-decoration.git",
   "license": "MIT",
-  "author": "bgw",
+  "author": "bgw and gabriel melo",
   "keywords": [
     "hyper",
     "hyper.app",
     "hyperterm",
     "terminal"
   ],
-  "main": "index.js"
+  "main": "src/index.js",
+  "dependencies": {
+    "@electron/remote": "^2.0.9"
+  }
 }

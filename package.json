@@ -1,6 +1,6 @@
 {
   "name": "@gabrielmelogm/hyper-native-window-decoration",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Native window decorations in HyperTerm",
   "repository": "https://github.com/gabrielmelogm/hyper-native-window-decoration.git",
   "license": "MIT",
